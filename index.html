@@ -1,27 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weatherly</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-                    <div class="nav-elements">
-                        <div class="brand">
-                            <div class="logo"><img src="" alt="Weatherly Logo"></div>
-                            <div class="tagline">Weather at a glance.</div>
-                            <div class="brandName">Weatherly</div>
-                        </div>
-                    </div>
-                    <div class="nav-elements"> 📍 Set your location</div>
+            <div class="nav-elements">
+                <div class="brand">
+                    <div class="logo"><img src="assets/icons/Weatherly Logo.png" alt="Weatherly Logo"></div>
+                    <div class="tagline">Weather at a glance.</div>
                     
+                </div>
+            </div>
+            <div class="nav-elements"> 📍 Set your location</div>
+
         </nav>
     </header>
-</body>
-<script src = 'js/script.js'></script>
+    
+        <section class="search-section">
+
+            <h1>What's the weather like today?</h1>
+
+            <p>Discover weather conditions anywhere in the world.</p>
+
+            <form id="weatherForm">
+
+                <input type="text" id="cityInput" placeholder="Search city, state or country..." required>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+            <div class="location-option">
+                <button id="locationBtn" type="button">
+                    📍 Use my location
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Weather Dashboard -->
+        <main id="weatherDashboard" hidden>
+
+            <!-- Current Weather -->
+            <section class="current-weather">
+                <h2>CURRENT WEATHER</h2>
+
+                <div id="currentWeather"></div>
+            </section>
+
+            <!-- Today's Highlights -->
+            <section class="highlights">
+                <h2>TODAY'S HIGHLIGHTS</h2>
+
+                <div id="weatherHighlights"></div>
+            </section>
+
+            <!-- Hourly Forecast -->
+            <section class="hourly-forecast">
+                <h2>HOURLY FORECAST</h2>
+
+                <div id="hourlyForecast"></div>
+            </section>
+
+            <!-- 7-Day Forecast -->
+            <section class="weekly-forecast">
+                <h2>7-DAY FORECAST</h2>
+
+                <div id="weeklyForecast"></div>
+            </section>
+
+        </main>
+
+        <section class="features-section" id="features">
+
+            <div class="feature-card">
+                <div class="feature-icon">🌡️</div>
+                <h3>Real-time Weather</h3>
+                <p>Stay updated with the latest weather conditions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Worldwide Locations</h3>
+                <p>Explore weather conditions from anywhere in the world.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Weather Forecasts</h3>
+                <p>Plan your day with upcoming weather forecasts.</p>
+            </div>
+
+        </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- Brand Information -->
+                <div class="footer-brand">
+                    <h2>🌤️ Weatherly</h2>
+                    <p>A clearer view of your day.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                </div>
+
+                <!-- Weather Data -->
+                <div class="footer-data">
+                    <h3>Weather Data</h3>
+                    <p>Powered by Open-Meteo</p>
+                    <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+                        Visit Open-Meteo
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Weatherly. All rights reserved.</p>
+                <p>Made with ❤️ by
+                    <a href="https://github.com/wadhwahemant" target="_blank" rel="noopener noreferrer">
+                        Hemant
+                    </a>
+                </p>
+            </div>
+
+        </footer>
 <script src="js/api.js"></script>
 <script src="js/ui.js"></script>
+<script src="js/script.js"></script>    
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+
+
 </html>
