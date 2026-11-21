@@ -418,3 +418,44 @@ input {
         text-align: center;
     }
 }
+
+#currentWeather {
+    background: #151515;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+}
+
+.temperature h1 {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.detail-card {
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.detail-card h3 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.detail-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .weather-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
