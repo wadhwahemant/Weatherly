@@ -23,7 +23,7 @@ submit.addEventListener('click', function (e) {
             console.log(data);
             const current = data.current;
 
-            
+
             const currentWeather = document.querySelector("#currentWeather");
             document.querySelector("#weatherDashboard").hidden = false;
             currentWeather.innerHTML = `
@@ -70,7 +70,7 @@ submit.addEventListener('click', function (e) {
     </div>
 `;
 
-lucide.createIcons();
+            lucide.createIcons();
         })
 
     })

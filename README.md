@@ -153,6 +153,16 @@ Some of the concepts I aim to practise include:
 
 Weatherly is currently a learning project. New features and improvements will be added progressively as development continues.
 
+🌐 Live Deployment
+
+Weatherly is live and accessible online.
+
+🚀 Live Website: https://weatherly-hemantwadhwa.vercel.app/
+
+Platform: Vercel
+
+Repository: GitHub – Weatherly
+
 ---
 
 ## 👨‍💻 Developer
